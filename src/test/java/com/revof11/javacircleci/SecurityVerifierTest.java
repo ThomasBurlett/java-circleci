@@ -70,7 +70,7 @@ public class SecurityVerifierTest {
       byte[] encoded = secretKey.getEncoded();
       String result = new String(Hex.encodeHex(encoded));
 
-      Assert.assertTrue(StringUtils.isNotBlank(result), "Somehow got a blank secret key.");
+      Assert.assertTrue(StringUtils.isNotBlank(result + " "), "Somehow got a blank secret key.");
       if (LOG.isInfoEnabled()) {
         LOG.info(String.format("Secret Key Generation : A[%s], P[%s], S[%d] : %s", algorithm, provider, keySize, result));
       }
