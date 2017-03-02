@@ -12,6 +12,7 @@ import java.security.NoSuchAlgorithmException;
  * is in place allowing our service to run on various continuous integration systems
  * as well as verification that our production services are configured properly.
  * There is nothing really fancy that goes on, otherwise.
+ *
  */
 public class SecurityVerifier {
 
